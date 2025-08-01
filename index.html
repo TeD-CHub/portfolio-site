@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+  html {
+    scroll-behavior: smooth;
+  }
+    </style>
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Personal portfolio of [Teddy Otieno]" />
+  <meta name="author" content="[Teddy Otieno]" />
+  <title>Teddy Otieno | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<button id="backToTop">↑ Back to Top</button>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+  AOS.init();
+</script>
+
+<body>
+  <header>
+    <h1>Teddy Otieno</h1>
+    <p>Tech Enthusiast | Web Developer | Software Engineer</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#interests">Interests</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section id="about" data-aos="fade-right">
+      <h2><i class="fas fa-user"></i>About Me</h2>
+      <p>Hey there! I'm Teddy Otieno, a tech enthusiast, web developer, and programmer who genuinely enjoys solving problems—sometimes even the ones I didn’t create myself.
+
+I build clean, responsive websites and web apps using modern tools, and I’m always learning something new (usually after Googling it 10 times). Whether it’s front-end flair or back-end logic, I love turning ideas into real, working code.
+
+When I'm not coding, you'll find me debugging life… one coffee at a time</p>
+    </section>
+
+    <section id="skills" data-aos="fade-up">
+      <h2><i class="fas fa-code"></i>Programming Languages</h2>
+      <ul>
+        <li>HTML</li>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>Python</li>
+        <li>C++</li>
+      </ul>
+    </section>
+
+    <section id="education">
+      <h2><i class="fas fas-graduation-cap"></i>Educational Background</h2>
+      <p>BSc. in Food Science and Technology - University of Nairobi, 2025</p>
+      <a href="assets/TEDDY OTIENO CV.pdf" download>📄 Download My CV</a>
+    </section>
+
+    <section id="interests">
+      <h2><i class="fas fa-heart"></i>Interests</h2>
+      <p>I’m deeply interested in building clean, functional web applications and constantly exploring new programming languages and frameworks. I enjoy diving into UI/UX design to make interfaces not just work, but look good too. Debugging is oddly satisfying (on most days), and I’m always up for automating repetitive tasks just to save a few clicks. I'm passionate about open-source projects, tech communities, and staying updated with the latest trends in web development. Outside of code, I unwind with gaming, music, and the occasional “just one more episode” kind of series.</p>
+    </section>
+
+    <section id="projects" data-aos="zoom-in" data-aos-delay="300">
+      <h2><i class="fas fa-laptop-code"></i>Projects</h2>
+
+      <div class="project-card">
+        <h3>Project One</h3>
+        <p>Food Blogging Website</p>
+        <a href="https://github.com/yourusername/project1" target="_blank">View on GitHub</a>
+      </div>
+
+      <div class="project-card">
+        <h3>Project Two</h3>
+        <p>Farm to Storage Link webapp</p>
+        <a href="https://github.com/yourusername/project2"target="_blank">View on GitHub</a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2><i class="fas fa-envelope"></i>Contact Me</h2>
+      <form action="mailto:teddychurchill682@gmail.com" method="post" enctype="text/plain">
+        <label for="name">Name:</label><br/>
+        <input type="text" id="name" name="name" required /><br/>
+
+        <label for="email">Email:</label><br/>
+        <input type="email" id="email" name="email" required /><br/>
+
+        <label for="message">Message:</label><br/>
+        <textarea id="message" name="message" rows="5" required></textarea><br/>
+
+        <button type="submit">Send</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Teddy Otieno. All rights reserved.</p>
+    <p>
+    Follow us:
+    <a href="#" aria-label="Instagram (Placeholder)">Instagram</a> |
+    <a href="#" aria-lebel="Facebook (Placeholder)">Facebook</a> |
+    <a href="#" aria-label="Twitter (Placeholder)">Twitter</a> |
+    <a href="#" aria-label="LinkedIn (Placeholder)">LinkedIn</a>
+    </p>
+  </footer>
+  <script>
+  const backToTopButton = document.getElementById('backToTop');
+
+  window.onscroll = () => {
+    if (window.scrollY > 300) {
+      backToTopButton.style.display = 'block';
+    } else {
+      backToTopButton.style.display = 'none';
+    }
+  };
+
+  backToTopButton.onclick = () => {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+</script>
+</body>
+</html>
