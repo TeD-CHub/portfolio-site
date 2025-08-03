@@ -612,7 +612,7 @@ body:not(.dark-mode) form label {
   .nav-links {
     display: none;
     flex-direction: column;
-    background-color: var(--accent-color); /* Adjust if needed */
+    background-color: var(--accent-color);
     position: absolute;
     top: 60px;
     right: 0;
@@ -635,6 +635,26 @@ body:not(.dark-mode) form label {
     display: block;
     margin: 10px 0;
   }
+}
+.hamburger span {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: 0.4s ease;
+  border-radius: 2px;
+}
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
 }
 
 
