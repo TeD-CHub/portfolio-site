@@ -87,6 +87,7 @@ nav ul li a:hover {
   color: white;
 }
 
+
 /* Hide nav links by default on mobile */
 .nav-links {
   display: flex;
@@ -599,6 +600,44 @@ body:not(.dark-mode) form label {
 * {
   font-style: normal;
 }
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+    position: absolute;
+    top: 1rem;
+    right: 1.5rem;
+    z-index: 1001;
+  }
+
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: var(--accent-color); /* Adjust if needed */
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1rem 0;
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    transform: translateY(-20px);
+    opacity: 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+}
+
+
 
 
 
