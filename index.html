@@ -46,8 +46,11 @@
 
   <nav>
  <div class="hamburger" id="hamburger">
-  <i class="fas fa-bars"></i>
+  <span></span>
+  <span></span>
+  <span></span>
 </div>
+
   <div class="nav-links" id="navLinks">
     <ul>
       <li><a href="#about">About</a></li>
@@ -175,7 +178,8 @@
   const navLinks = document.getElementById('navLinks');
 
   hamburger.addEventListener('click', () => {
-    navLinks.classList.toggle('active');
+    hamburger.classList.toggle('active'); // ✖ icon
+    navLinks.classList.toggle('active'); // slide menu
   });
 </script>
 </body>
